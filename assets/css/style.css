@@ -8,7 +8,7 @@ body {
     font-family: 'Oxanium', cursive;
     font-size: 10vw;
     text-align: center;
-    width: 70%;
+    width: 80%;
     padding-top: 5rem;
     padding-bottom: 5rem;
     margin-left: auto;
@@ -19,7 +19,7 @@ body {
 
 .container {
     background-color: #006fcd;
-    width: 70%;
+    width: 80%;
     height: 100%;
     margin-left: auto;
     margin-right:auto;
@@ -31,9 +31,16 @@ body {
     background-color: white;
     width: 70%;
     height: 50vh;
+    max-height: 800px;
     margin-left: auto;
     margin-right:auto;
-    margin-bottom: 12vh;
+}
+
+.image {
+    width: 100%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .question-box {
@@ -42,4 +49,20 @@ body {
     height: 50vh;
     margin-left: auto;
     margin-right:auto;
+    margin-bottom: 12vh;
+}
+
+.footer {
+    background-color: black;
+    color: white;
+    font-family: 'Oxanium', cursive;
+    font-size: 10vw;
+    text-align: center;
+    width: 80%;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    margin-left: auto;
+    margin-right:auto;
+    margin-top: 0;
+    margin-bottom: 0;
 }

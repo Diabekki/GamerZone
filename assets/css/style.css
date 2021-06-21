@@ -1,0 +1,45 @@
+body {
+    background: white;
+}
+
+.heading {
+    background-color: black;
+    color: white;
+    font-family: 'Oxanium', cursive;
+    font-size: 10vw;
+    text-align: center;
+    width: 70%;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    margin-left: auto;
+    margin-right:auto;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.container {
+    background-color: #006fcd;
+    width: 70%;
+    height: 100%;
+    margin-left: auto;
+    margin-right:auto;
+    padding-top: 12vh;
+    padding-bottom: 12vh;
+}
+
+.image-box {
+    background-color: white;
+    width: 70%;
+    height: 50vh;
+    margin-left: auto;
+    margin-right:auto;
+    margin-bottom: 12vh;
+}
+
+.question-box {
+    background-color: white;
+    width: 70%;
+    height: 50vh;
+    margin-left: auto;
+    margin-right:auto;
+}

@@ -85,6 +85,7 @@ margin: auto;
 
 }
     /* game page styling*/
+
     .quiz-zone {
         color: white;
         font-family: 'Oxanium', cursive;
@@ -94,11 +95,33 @@ margin: auto;
         .container-quiz {
             width: 50%;
             height: 100%;
-            background-color: red;
             border-radius: 50px;
             margin-left: auto;
             margin-right:auto;
             padding-top: 0;
             padding-bottom: 0;
-            justify-content: center;
+            }
+            
+            .questions {
+            color: white;
+            font-family: 'Oxanium', cursive;
+            font-size: 2vw;
+            
+            }
+
+            .answers{
+            color: white;
+            font-family: 'Oxanium', cursive;
+            font-size: 1vw;
+            }
+
+            .option-box {
+            width: 80%;
+            border-radius: 10px;
+            display: flex;
+            margin-top: 5px;
+            margin-bottom: 5px;
+            background-color: black;
+            min-width: 400px;
+
             }

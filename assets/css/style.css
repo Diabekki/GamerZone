@@ -123,5 +123,15 @@ margin: auto;
             margin-bottom: 5px;
             background-color: black;
             min-width: 400px;
+            }
+            .option-box:hover {
+                cursor: pointer; 
+            }
 
+            .quiz-bar {
+                Width: 80%;
+                height: 1vh;
+                border: 5px solid green;
+                border-radius: 0.5vh;
+                overflow: hidden;
             }

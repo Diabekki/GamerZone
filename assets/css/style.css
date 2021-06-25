@@ -132,6 +132,13 @@ margin: auto;
                 Width: 80%;
                 height: 1vh;
                 border: 5px solid green;
-                border-radius: 0.5vh;
+                border-radius: 1vh;
                 overflow: hidden;
+            }
+
+            .quiz-bar-full {
+                height: 100%;
+                border: 5px solid green;
+                width: 0%;
+
             }

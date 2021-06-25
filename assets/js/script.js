@@ -1,96 +1,85 @@
-var questionBox = document.getElementsByClassName('questions');
-var result = document.getElementsByClassName('result');
-var submit = document.getElementById('submit');
-function createQuiz (questions, questionBox, result, submitButton){
-    function showQuiz(questions, questionBox){
-	var output = [];
-	var answers;
-	for(var i=0; i<questions.length; i++){
-		answers = [];
-		for(letter in questions[i].answers){
-			answers.push(
-				'<label>'
-					+ '<input type="radio" name="question'+i+'" value="'+letter+'">'
-					+ letter + ': '
-					+ questions[i].answers[letter]
-				+ '</label>'
-			);
-		}
-		output.push(
-			'<div class="questions">' + questions[i].questions + '</div>'
-			+ '<div class="answers">' + answers.join('') + '</div>'
-		);
-	}
-	questionBox.innerHTML = output.join('');
-}
-    function result (questions, questionBox, result) {
-	var answerContainers = questionBox.querySelectorAll('.answers');
-	var userAnswer = '';
-	var numCorrect = 0;
-	for(var i=0; i<questions.length; i++){
-		userAnswer = (answerContainers[i].querySelector('input[name=questions'+i+']:checked')||{}).value;
-		if(userAnswer===questions[i].correctAnswer){
-			numCorrect++;
-			answerContainers[i].style.color = 'lightgreen';
-		}
-		else{
-			answerContainers[i].style.color = 'red';
-		}
-	}
-	result.innerHTML = numCorrect + ' out of ' + questions.length;
-}
-    showQuiz(questions, questionBox);
+const questions = document.getElementsByClassName('.questions');
+const options = Array.from(document.querySelectorAll('answers'));
+const quizZone = document.getElementsByClassName('quiz-zone');
+const scoreNum = document.getElementsByClassName('score');
+const quizBarFull = document.getElementsByClassName('quiz-bar-full');
 
-    submitButton.onclick = function(){
-        result(questions, questionBox, result);
+let score = 0
+let questionCounter = 0
+let currentQ = {}
+let remainingQ = []
+let correctAnswers = true
+
+let questions = [
+    {
+        question: '1.When did Super Mario release?',
+        option1: '1990',
+        option2: '1985',
+        option3: '1978',
+        answer: 2,
+    },
+    {
+        question: '2.Who is Luigis girlfriend?',
+        option1: 'Princess Peach',
+        option2: 'Princess Daisy',
+        option3: 'Rosalina',
+        answer: 2,
+    },
+    {
+        question: '3.What country was tetris 64 only released in?',
+        option1: 'Russia',
+        option2: 'America',
+        option3: 'Japan',
+        answer: 3,
+    },
+    {
+        question: '4.What was the first commercially successful video game?',
+        option1: 'Tetris',
+        option2: 'Pong',
+        option3: 'Space Invaders',
+        answer: 2,
+    },
+    {
+        question: '5.What is the best selling video game of all time?',
+        option1: 'Call of Duty',
+        option2: 'Fifa',
+        option3: 'Minecraft',
+        answer: 3,
+    },
+    {
+        question: '6.In what game did mario first appear?',
+        option1: 'Donkey Kong',
+        option2: 'Super Mario',
+        option3: 'Mario Kart',
+        answer: 1,
+    },
+    {
+        question: '7.When was the first arcade machine made?',
+        option1: '1971',
+        option2: '1985',
+        option3: '1978',
+        answer: 1,
+    },
+    {
+        question: '8.What is Sonics original home planet called?',
+        option1: 'Earth',
+        option2: 'Emerald Planet',
+        option3: 'Mobius',
+        answer: 2,
+    },
+    {
+        question: '9.What was Pac-Mans original name?',
+        option1: 'Puck-Man',
+        option2: 'Pizza-Man',
+        option3: 'Chomp',
+        answer: 1,
+    },
+    {
+        question: '10.What company developed Space Invaders?',
+        option1: 'Atari',
+        option2: 'Nintendo',
+        option3: 'Taito',
+        answer: 3,
     }
-}
-var quizQuestions = [
-    {
-        question: "What year was the PlayStation 1 released?",
-        answers: {
-            a: '1993',
-            b: '1994',
-            c: '1996'
-        },
-        correctAnswer: 'b'
-    },
-    {
-        question: "What year was the PlayStation 2 released?",
-        answers: {
-            a: '2000',
-            b: '2003',
-            c: '1999'
-        },
-        correctAnswer: 'a'
-    },
-    {
-        question: "What year was the PlayStation 3 released?",
-        answers: {
-            a: '2004',
-            b: '2007',
-            c: '2006'
-        },
-        correctAnswer: 'c'
-    },
-    {
-        question: "What year was the PlayStation 4 released?",
-        answers: {
-            a: '2009',
-            b: '2011',
-            c: '2013'
-        },
-        correctAnswer: 'c'
-    },
-    {
-        question: "What year was the PlayStation 5 released?",
-        answers: {
-            a: '2018',
-            b: '2019',
-            c: '2020'
-        },
-        correctAnswer: 'c'
-    }
-    
-];
-generateQuiz(quizQuestions, questionBox, result, submit);
+
+]

@@ -25,7 +25,7 @@ startGame = () => {
 
 //Question selection//
 nextQ = () => {
-    if(remainingQ.length ===0 || qCounter > QUESTION_LIMIT) {
+    if (remainingQ.length === 0 || qCounter > QUESTION_LIMIT) {
         localStorage.setItem('newScore', score);
 
         return window.location.assign('/leaderboard.html');
@@ -46,19 +46,19 @@ nextQ = () => {
     remainingQ.splice(qIndex, 1);
 
     correctAnswers = true;
-    
+
 };
 
 options.forEach(Option => {
     Option.addEventListener('click', e => {
-        if(!correctAnswers) return;
+        if (!correctAnswers) return;
 
         const ansClicked = e.target;
         const ansSelect = ansClicked.dataset['num'];
         correctAnswers = false;
         let rightWrong = ansSelect == currentQ.answer ? 'right' : 'wrong';
 
-        if(rightWrong === 'right') {
+        if (rightWrong === 'right') {
             incrementScore(POINTS);
         }
         ansClicked.parentElement.classList.add(rightWrong);
@@ -67,18 +67,17 @@ options.forEach(Option => {
             ansClicked.parentElement.classList.remove(rightWrong);
             nextQ();
         }, 1000);
-    
+
     });
 });
-          
+
 incrementScore = num => {
-    score +=num;
+    score += num;
     scoreText.innertext = score;
 };
 
 //question array, including answers and correct answers//
-let questions = [
-    {
+let questions = [{
         question: '1.When did Super Mario release?',
         option1: '1990',
         option2: '1985',

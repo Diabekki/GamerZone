@@ -1,15 +1,28 @@
+//Set up variable declerations//
+const POINTS = 1000
+const QUESTION_LIMIT = 10
+const scoreNum = document.getElementsByClassName('score');
+const quizZone = document.getElementsByClassName('quiz-zone');
 const questions = document.getElementsByClassName('.questions');
 const options = Array.from(document.querySelectorAll('answers'));
-const quizZone = document.getElementsByClassName('quiz-zone');
-const scoreNum = document.getElementsByClassName('score');
 const quizBarFull = document.getElementsByClassName('quiz-bar-full');
 
+//Set up 'let' variables//
 let score = 0
-let questionCounter = 0
+let qCounter = 0
 let currentQ = {}
 let remainingQ = []
 let correctAnswers = true
 
+//Game set up//
+startGame = () => {
+    score = 0
+    qCounter = 0
+    
+
+}
+
+//question array, including answers and correct answers//
 let questions = [
     {
         question: '1.When did Super Mario release?',

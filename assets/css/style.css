@@ -84,3 +84,12 @@ body {
     margin: auto;
     
     }
+
+    #quiz {
+        color: white;
+        font-family: 'Oxanium', cursive;
+        font-size: 1vw;
+        text-align: center;
+        width: 100%;
+        margin: auto;
+    }

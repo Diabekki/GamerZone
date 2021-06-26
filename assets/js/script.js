@@ -1,6 +1,7 @@
+/*jshint esversion: 6 */
 //Set up variable declerations//
-const POINTS = 1000
-const QUESTION_LIMIT = 10
+const POINTS = 1000;
+const QUESTION_LIMIT = 10;
 const scoreNum = document.getElementsByClassName('score');
 const quizZone = document.getElementsByClassName('quiz-zone');
 const questions = document.getElementsByClassName('.questions');
@@ -8,19 +9,72 @@ const options = Array.from(document.querySelectorAll('answers'));
 const quizBarFull = document.getElementsByClassName('quiz-bar-full');
 
 //Set up 'let' variables//
-let score = 0
-let qCounter = 0
-let currentQ = {}
-let remainingQ = []
-let correctAnswers = true
+let score = 0;
+let qCounter = 0;
+let currentQ = {};
+let remainingQ = [];
+let correctAnswers = true;
 
 //Game set up//
 startGame = () => {
-    score = 0
-    qCounter = 0
-    
+    score = 0;
+    qCounter = 0;
+    remainingQ = [...questions];
+    nextQ();
+};
 
-}
+//Question selection//
+nextQ = () => {
+    if(remainingQ.length ===0 || qCounter > QUESTION_LIMIT) {
+        localStorage.setItem('newScore', score);
+
+        return window.location.assign('/leaderboard.html');
+    }
+    qCounter++;
+    quizZone.innertext = `Question ${qCounter} of ${QUESTION_LIMIT}`;
+    quizBarFull.style.width = `${(qCounter/QUESTION_LIMIT) * 100}%`;
+
+    const qIndex = Math.floor(Math.random() * remainingQ.length);
+    currentQ = remainingQ[qIndex];
+    question.innertext = currentQ.question;
+
+    options.forEach(Option => {
+        const num = Option.dataset['num'];
+        Option.innertext = currentQ['option' + num];
+    });
+
+    remainingQ.splice(qIndex, 1);
+
+    correctAnswers = true;
+    
+};
+
+options.forEach(Option => {
+    Option.addEventListener('click', e => {
+        if(!correctAnswers) return;
+
+        const ansClicked = e.target;
+        const ansSelect = ansClicked.dataset['num'];
+        correctAnswers = false;
+        let rightWrong = ansSelect == currentQ.answer ? 'right' : 'wrong';
+
+        if(rightWrong === 'right') {
+            incrementScore(POINTS);
+        }
+        ansClicked.parentElement.classList.add(rightWrong);
+
+        setTimeout(() => {
+            ansClicked.parentElement.classList.remove(rightWrong);
+            nextQ();
+        }, 1000);
+    
+    });
+});
+          
+incrementScore = num => {
+    score +=num;
+    scoreText.innertext = score;
+};
 
 //question array, including answers and correct answers//
 let questions = [
@@ -95,4 +149,4 @@ let questions = [
         answer: 3,
     }
 
-]
+];

@@ -1,135 +1,148 @@
+/*jshint esversion: 6 */
 //Functions (Start Game & End Game)//
-function startGame(){
-   
-    //HTML Output//
-    const Output = [];
-
+function startGame() {
+    const output = [];
     questions.forEach(
         (currentQ, qNum) => {
             const answers = [];
-            for(letter in currentQ.answers){
+            for (letter in currentQ.answers) {
                 answers.push(
                     `<label>
-                    <input type="radio" name="question${qNum}" value="${letter}
-                    ${letter} :
-                    ${currentQ.answers[letter]}
-                    </label>`
+              <input type="radio" name="question${qNum}" value="${letter}">
+              ${letter} :
+              ${currentQ.answers[letter]}
+            </label>`
                 );
             }
-            Output.push(
+            output.push(
                 `<div class="question"> ${currentQ.question} </div>
-                <div class="answers"> ${answers.join('')} </div>`
+          <div class="answers"> ${answers.join('')} </div>`
             );
         }
     );
-    quiz.innerHTML = Output.join('');
+    quiz.innerHTML = output.join('');
 }
 
-function gameEnd(){}
+function gameEnd() {
+
+    const answersBox = quiz.querySelectorAll('.answers');
+    let score = 0;
+    questions.forEach((currentQ, qNum) => {
+        const answerBox = answersBox[qNum];
+        const qSelect = `input[name=question${qNum}]:checked`;
+        const userAns = (answerBox.querySelector(qSelect) || {}).value;
+
+        //Correct answer//
+        if (userAns === currentQ.answer) {
+            score++;
+            answersBox[qNum].style.color = 'green';
+        } else {
+            answersBox[qNum].style.color = 'red';
+        }
+    });
+
+    results.innerHTML = `${score} out of ${questions.length}`;
+}
 
 // Variable contained within the code //
 const quiz = document.getElementById('quiz');
 const results = document.getElementById('results');
 const submitbtn = document.getElementById('submit');
 //question array, including answers and correct answers//
-const questions = [
-    {
+const questions = [{
         question: "When did Super Mario release?",
         answers: {
-            1: "1990",
-            2: "1985",
-            3: "1978"
+            a: "1990",
+            b: "1985",
+            c: "1978"
         },
-        answer: "2"
+        answer: "b"
     },
     {
         question: "Who is Luigis girlfriend?",
         answers: {
-            1: "Princess Peach",
-            2: "Princess Daisy",
-            3: "Rosalina"
+            a: "Princess Peach",
+            b: "Princess Daisy",
+            c: "Rosalina"
         },
-        answer: "2"
+        answer: "b"
     },
     {
         question: "What country was tetris 64 only released in?",
         answers: {
-            1: "Russia",
-            2: "America",
-            3: "Japan"
+            a: "Russia",
+            b: "America",
+            c: "Japan"
         },
-        answer: "3"
+        answer: "c"
     },
     {
         question: "What was the first commercially successful video game?",
         answers: {
-            1: "Tetris",
-            2: "Pong",
-            3: "Space Invaders"
+            a: "Tetris",
+            b: "Pong",
+            c: "Space Invaders"
         },
-        answer: "2"
+        answer: "b"
     },
     {
         question: "What is the best selling video game of all time?",
         answers: {
-            1: "Call of Duty",
-            2: "Fifa",
-            3: "Minecraft"
+            a: "Call of Duty",
+            b: "Fifa",
+            c: "Minecraft"
         },
-        answer: "3"
+        answer: "c"
     },
     {
         question: "In what game did mario first appear?",
         answers: {
-            1: "Donkey Kong",
-            2: "Super Mario",
-            3: "Mario Kart"
+            a: "Donkey Kong",
+            b: "Super Mario",
+            c: "Mario Kart"
         },
-        answer: "1"
+        answer: "a"
     },
     {
         question: "When was the first arcade machine made?",
         answers: {
-            1: "1971",
-            2: "1985",
-            3: "1978"
+            a: "1971",
+            b: "1985",
+            c: "1978"
         },
-        answer: "1"
+        answer: "a"
     },
     {
         question: "What is Sonics original home planet called?",
         answers: {
-            1: "Earth",
-            2: "Emerald Planet",
-            3: "Mobius"
+            a: "Earth",
+            b: "Emerald Planet",
+            c: "Mobius"
         },
-        answer: "2"
+        answer: "b"
     },
     {
         question: "What was Pac-Mans original name?",
         answers: {
-            1: "Puck-Man",
-            2: "Pizza-Man",
-            3: "Chomp"
+            a: "Puck-Man",
+            b: "Pizza-Man",
+            c: "Chomp"
         },
-        answer: "1"
+        answer: "a"
     },
     {
         question: "What company developed Space Invaders?",
         answers: {
-            1: "Atari",
-            2: "Nintendo",
-            3: "Taito"
+            a: "Atari",
+            b: "Nintendo",
+            c: "Taito"
         },
-        answer: "3"
+        answer: "c"
     }
-    ];
+];
 
 // startGame function will ensure the program is reset and ready to run whenever called //
 startGame();
 
 // Compile and display results upon click of Submit button//
 submitbtn.addEventListener('click', gameEnd)
-
-
-

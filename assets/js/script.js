@@ -23,28 +23,9 @@ function startGame() {
         }
     );
     container.innerHTML = output.join('');
+
 }
 
-function gameEnd() {
-
-    const answersBox = container.querySelectorAll('.answers');
-    let score = 0;
-    questions.forEach((currentQ, qNum) => {
-        const answerBox = answersBox[qNum];
-        const qSelect = `input[name=question${qNum}]:checked`;
-        const userAns = (answerBox.querySelector(qSelect) || {}).value;
-
-        //Correct answer//
-        if (userAns === currentQ.answer) {
-            score++;
-            answersBox[qNum].style.color = 'green';
-        } else {
-            answersBox[qNum].style.color = 'red';
-        }
-    });
-
-    results.innerHTML = `${score} out of ${questions.length}`;
-}
 
 function sPage(n) {
     pages[cPage].classList.remove('active-page');
@@ -68,7 +49,25 @@ function sPage(n) {
 
   function sNPage() {
     sPage(cPage + 1);
-  }
+    const answersBox = container.querySelectorAll('.answers');
+    let score = 0;
+    questions.forEach((currentQ, qNum) => {
+        const answerBox = answersBox[qNum];
+        const qSelect = `input[name=question${qNum}]:checked`;
+        const userAns = (answerBox.querySelector(qSelect) || {}).value;
+
+        //Correct answer//
+        if (userAns === currentQ.answer) {
+            score++;
+            answersBox[qNum].style.color = 'green';
+        } else {
+            answersBox[qNum].style.color = 'white';
+        }
+    });
+
+    results.innerHTML = `${score} / ${questions.length} correct`;
+}
+
   
   function sPPage() {
     sPage(cPage - 1);
@@ -78,6 +77,7 @@ function sPage(n) {
 const container = document.getElementById('quiz');
 const results = document.getElementById('results');
 const submitbtn = document.getElementById('submit');
+
 //question array, including answers and correct answers//
 const questions = [{
         question: "When did Super Mario release?",
@@ -174,6 +174,7 @@ const questions = [{
 // startGame function will ensure the program is reset and ready to run whenever called //
 startGame();
 
+
 //Page function
 const previousbtn = document.getElementById("previous");
 const next = document.getElementById("next");
@@ -182,7 +183,12 @@ let cPage = 0;
 
 sPage(cPage);
 
+function home() {
+    window.location.href='/index.html';
+    alert("Congratulations, you got " + results.textContent + "!");
+}
+
 // Compile and display results upon click of Submit button - Event Listeners//
-submitbtn.addEventListener('click', gameEnd);
 previousbtn.addEventListener('click', sPPage);
 next.addEventListener('click', sNPage);
+submitbtn.addEventListener('click', home);

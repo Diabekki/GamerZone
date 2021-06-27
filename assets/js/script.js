@@ -15,7 +15,7 @@ function startGame() {
                 );
             }
             output.push(
-                `<div class="slide">
+                `<div class="page">
                   <div class="question"> ${currentQ.question} </div>
                   <div class="answers"> ${answers.join("")} </div>
                 </div>`
@@ -46,17 +46,17 @@ function gameEnd() {
     results.innerHTML = `${score} out of ${questions.length}`;
 }
 
-function sSlide(n) {
-    slides[cSlide].classList.remove('active-slide');
-    slides[n].classList.add('active-slide');
-    cSlide = n;
-    if(cSlide === 0){
+function sPage(n) {
+    pages[cPage].classList.remove('active-page');
+    pages[n].classList.add('active-page');
+    cPage = n;
+    if(cPage === 0){
       previousbtn.style.display = 'none';
     }
     else{
       previousbtn.style.display = 'inline-block';
     }
-    if(cSlide === slides.length-1){
+    if(cPage === pages.length-1){
       next.style.display = 'none';
       submitbtn.style.display = 'inline-block';
     }
@@ -66,12 +66,12 @@ function sSlide(n) {
     }
   }
 
-  function sNSlide() {
-    sSlide(cSlide + 1);
+  function sNPage() {
+    sPage(cPage + 1);
   }
   
-  function sPSlide() {
-    sSlide(cSlide - 1);
+  function sPPage() {
+    sPage(cPage - 1);
   }
 
 // Variable contained within the code //
@@ -174,15 +174,15 @@ const questions = [{
 // startGame function will ensure the program is reset and ready to run whenever called //
 startGame();
 
-//Slide function
+//Page function
 const previousbtn = document.getElementById("previous");
 const next = document.getElementById("next");
-const slides = document.querySelectorAll(".slide");
-let cSlide = 0;
+const pages = document.querySelectorAll(".page");
+let cPage = 0;
 
-sSlide(cSlide);
+sPage(cPage);
 
 // Compile and display results upon click of Submit button - Event Listeners//
 submitbtn.addEventListener('click', gameEnd);
-previousbtn.addEventListener('click', sPSlide);
-next.addEventListener('click', sNSlide);
+previousbtn.addEventListener('click', sPPage);
+next.addEventListener('click', sNPage);

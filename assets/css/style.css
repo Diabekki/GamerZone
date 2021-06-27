@@ -116,7 +116,7 @@ body {
         }
         #next {
             position: absolute;
-            top: 120%;
+            top: 60vh;
             left: 60vw;
             background: #ffff00;
             font-family: 'Oxanium', cursive;
@@ -129,10 +129,9 @@ body {
             }
             #previous {
                 position: absolute;
-                top: 100%;
-                left: 40%;
+                top: 60vh;
+                left: 30vw;
                 background: #ffff00;
-                transform: translate(-0%, -0%);
                 font-family: 'Oxanium', cursive;
                 font-size: 5vw;
                 border-radius: 15%;
@@ -145,7 +144,7 @@ body {
     .question {
         color: white;
         font-family: 'Oxanium', cursive;
-        font-size: 5vw;
+        font-size: 3vw;
 
     } 
 
@@ -158,26 +157,18 @@ body {
 
     }
     /* To Be Changed*/
-    .slide {
+    .page {
         position: absolute;
         left: 0px;
-        top: 20%;
+        top: 30vh;
         width: 100%;
         z-index: 1;
         opacity: 0;
         transition: opacity 0.5s;
     }
-    .active-slide{
+    .active-page{
         opacity: 1;
         z-index: 2;
-    }
-    .container {
-        position: relative;
-        height: 200px;
-        margin-top: 40px;
-    }
-    .hide-btn{
-        display: none;
     }
 
 

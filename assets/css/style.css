@@ -99,8 +99,8 @@ body {
 
 #submit {
     position: absolute;
-    top: 60vh;
-    left: 60vw;
+    top: 100vh;
+    left: 55vw;
     background: #ffff00;
     font-family: 'Oxanium', cursive;
     font-size: 3vw;
@@ -112,8 +112,8 @@ body {
 }
 #next {
     position: absolute;
-    top: 60vh;
-    left: 60vw;
+    top: 100vh;
+    left: 55vw;
     background: #ffff00;
     font-family: 'Oxanium', cursive;
     font-size: 3vw;
@@ -126,7 +126,7 @@ body {
 
 #previous {
     position: absolute;
-    top: 60vh;
+    top: 100vh;
     left: 30vw;
     background: #ffff00;
     font-family: 'Oxanium', cursive;
@@ -139,10 +139,18 @@ body {
 }
 
 .question {
-    color: white;
+    color: #b7e9f7;
     font-family: 'Oxanium', cursive;
     font-size: 3vw;
-
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 30vh;
+    background-color: rgba(75, 75, 75, 0.85);
+    width: 80%;
+    padding-top: 30px;
+    padding-bottom: 50px;
+    border-radius: 10px 10px 0 0;
 }
 
 
@@ -150,14 +158,20 @@ body {
     color: white;
     font-family: 'Oxanium', cursive;
     margin-bottom: 30px;
-    font-size: 3vw;
-
+    font-size: 1.5vw;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: rgba(75, 75, 75, 0.85);
+    width: 80%;
+    padding-bottom: 20px;
+    border-radius: 0 0 10px 10px;
 }
 
 #results {
     position: absolute;
-    top: 80vh;
-    left: 45vw;
+    top: 120vh;
+    left: 42vw;
     background: rgb(131, 255, 131);
     font-family: 'Oxanium', cursive;
     font-size: 3vw;
@@ -179,4 +193,10 @@ body {
 .active-page {
     opacity: 1;
     z-index: 2;
+}
+.game-image{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
 }

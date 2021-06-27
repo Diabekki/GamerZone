@@ -22,12 +22,12 @@ function startGame() {
               );
         }
     );
-    quiz.innerHTML = output.join('');
+    container.innerHTML = output.join('');
 }
 
 function gameEnd() {
 
-    const answersBox = quiz.querySelectorAll('.answers');
+    const answersBox = container.querySelectorAll('.answers');
     let score = 0;
     questions.forEach((currentQ, qNum) => {
         const answerBox = answersBox[qNum];
@@ -51,10 +51,10 @@ function sSlide(n) {
     slides[n].classList.add('active-slide');
     cSlide = n;
     if(cSlide === 0){
-      previous.style.display = 'none';
+      previousbtn.style.display = 'none';
     }
     else{
-      previous.style.display = 'inline-block';
+      previousbtn.style.display = 'inline-block';
     }
     if(cSlide === slides.length-1){
       next.style.display = 'none';
@@ -75,7 +75,7 @@ function sSlide(n) {
   }
 
 // Variable contained within the code //
-const quiz = document.getElementById('quiz');
+const container = document.getElementById('quiz');
 const results = document.getElementById('results');
 const submitbtn = document.getElementById('submit');
 //question array, including answers and correct answers//
@@ -175,16 +175,14 @@ const questions = [{
 startGame();
 
 //Slide function
-const previous = document.getElementById("previous");
+const previousbtn = document.getElementById("previous");
 const next = document.getElementById("next");
 const slides = document.querySelectorAll(".slide");
 let cSlide = 0;
 
 sSlide(cSlide);
 
-//Begin Slides
-
 // Compile and display results upon click of Submit button - Event Listeners//
 submitbtn.addEventListener('click', gameEnd);
-previous.addEventListener('click', sPSlide);
+previousbtn.addEventListener('click', sPSlide);
 next.addEventListener('click', sNSlide);

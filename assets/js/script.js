@@ -5,7 +5,7 @@ function startGame() {
     questions.forEach(
         (currentQ, qNum) => {
             const answers = [];
-            for (letter in currentQ.answers) {
+            for (var letter in currentQ.answers) {
                 answers.push(
                     `<label>
               <input type="radio" name="question${qNum}" value="${letter}">
@@ -15,9 +15,11 @@ function startGame() {
                 );
             }
             output.push(
-                `<div class="question"> ${currentQ.question} </div>
-          <div class="answers"> ${answers.join('')} </div>`
-            );
+                `<div class="slide">
+                  <div class="question"> ${currentQ.question} </div>
+                  <div class="answers"> ${answers.join("")} </div>
+                </div>`
+              );
         }
     );
     quiz.innerHTML = output.join('');
@@ -43,6 +45,34 @@ function gameEnd() {
 
     results.innerHTML = `${score} out of ${questions.length}`;
 }
+
+function sSlide(n) {
+    slides[cSlide].classList.remove('active-slide');
+    slides[n].classList.add('active-slide');
+    cSlide = n;
+    if(cSlide === 0){
+      previous.style.display = 'none';
+    }
+    else{
+      previous.style.display = 'inline-block';
+    }
+    if(cSlide === slides.length-1){
+      next.style.display = 'none';
+      submitbtn.style.display = 'inline-block';
+    }
+    else{
+      next.style.display = 'inline-block';
+      submitbtn.style.display = 'none';
+    }
+  }
+
+  function sNSlide() {
+    sSlide(cSlide + 1);
+  }
+  
+  function sPSlide() {
+    sSlide(cSlide - 1);
+  }
 
 // Variable contained within the code //
 const quiz = document.getElementById('quiz');
@@ -144,5 +174,17 @@ const questions = [{
 // startGame function will ensure the program is reset and ready to run whenever called //
 startGame();
 
-// Compile and display results upon click of Submit button//
-submitbtn.addEventListener('click', gameEnd)
+//Slide function
+const previous = document.getElementById("previous");
+const next = document.getElementById("next");
+const slides = document.querySelectorAll(".slide");
+let cSlide = 0;
+
+sSlide(cSlide);
+
+//Begin Slides
+
+// Compile and display results upon click of Submit button - Event Listeners//
+submitbtn.addEventListener('click', gameEnd);
+previous.addEventListener('click', sPSlide);
+next.addEventListener('click', sNSlide);

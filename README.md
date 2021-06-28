@@ -26,20 +26,20 @@ The quiz features large contrasted previous and next buttons to help users know 
   - the text was put above the START button to further show the user what needs to be clicked/pressed. 
 
    **Start Button to begin quiz**
- - The design of the start button was to mimic the feeling of arcade start buttons.
+ - The design of the start button was to mimic the feeling of an arcade start button.
  - it was designed to look 3D to give the user clear intent that this needs to be pressed.
 
   ![Image of arcade start button](assets/images/start-button.JPG)
 
  **Main page image**
   - The image chosen fit very well with the page intent.
-  - The colourful image conveys what the user should be expecting from the page, the user will be expecting a game as image keeps overall page flow. 
+  - The colourful image conveys what the user should be expecting from the page, the user will be expecting a game as image helps the feeling of the overall page.
 
  ![Image of kid playing arcade games](assets/images/homepage-main-image.JPG)
 
 
  **Footer, copyright text** 
-  - The footer consists of high contrast colours, white against black for a sleek vibe yes still in sync with the websites theme.
+  - The footer consists of high contrast colours, white against black for a sleek vibe yet still in sync with the websites theme.
   - I kept the footer simple for the same reason the navigation bar was styled simplistically.
   - the simple design keeps the user focused on the image and start button (which commenses the quiz).
 
@@ -49,21 +49,21 @@ The quiz features large contrasted previous and next buttons to help users know 
   - The quiz is compiled of trivia questions based on popular games.
   - There is 10 questions in total to give variety to the user.
   - The aim of the quiz is to be both fun and challenging to the user.
-  - there are previous and next buttons to move through the quiz and an end button which acts as both a submit and link to direct the user back to the hompage.
+  - there are previous and next buttons to move through the quiz and an end button which acts as both a submit button and link to direct the user back to the hompage.
   - A JavaScript alert appears at the end to indicate total player score.
 
   ![image of quiz](assets/images/background-image-of-quiz.JPG)
 
 **Quiz box** 
-  - The light opacity grey was chosen because I wanted to have the background pop in slightly from the background, I felt a stark grey contrast against the background image would ruin flow.
-  - The Question font colour is different from answers because I wanted to have a subtle yes noticeable between them, that is why questions are a larger font and slightly blue in colour.
+  - The light opacity grey was chosen because I wanted to have the background slightly visable, I felt a stark grey contrast against the background image would ruin flow.
+  - The Question font colour is different from answers because I wanted to have a subtle yes noticeable difference between them, that is why questions are a larger font and slightly blue in colour.
  
 
  ![Image of questions and answers box](assets/images/quiz-question-and-answers.JPG)
 
 
  **The end of quiz button prompt** 
-   - I decide to have an end button overlay the next button when the user reached the end of the quiz.
+   - I decide to have an end button replacing the next button when the user reached the end of the quiz.
     - The end button will bring the user back to the hompage
    - This was done as to not cause an abrupt stop to the user experience and keep flow in tact.
   
@@ -71,7 +71,7 @@ The quiz features large contrasted previous and next buttons to help users know 
 
    **Score Counter**
    - Score counter was added to give user information of how many correct answers they clicked.
-   - The bright green was chosen to make the score box pop against the background.
+   - The bright green was chosen to make the score box pop against the background and to convey positivity with its bright colour.
 
    ![Image of score counter](assets/images/answer-correct-counter.JPG)
 
@@ -83,7 +83,7 @@ The quiz features large contrasted previous and next buttons to help users know 
 
   **Features left to add**
     - Create an original song to add to the quiz page for user to play as they go through the quiz.
-    - More questions about the wide variety of games.
+    - More questions involving a wide variety of games.
     - Either a carousel or a list of corresponding images that match question context and change when next button is clicked.
     - To go through more Media queries to make the website even more accessible to a wider variety of users.
 
@@ -107,6 +107,10 @@ The quiz features large contrasted previous and next buttons to help users know 
     - The final issue faced was the coding of the alert box to tell the user their results.
     This issue was due, again, to variables being defined within functions, this led to some variables being underdefined which I redefined outside of the function in order to get this work.
 
+
+- Deployment Issues
+    - Issues I had faced after deployment of website was that all hyperlinks were broken and giving a 404 message.
+    Through slack and very helpful individuals in my course I finally spotted the issue which was a foward slash on my hyperlinks causing the 404 error. I removed them and pushed the website which solved the issue.
 
 - User testing
     - through a personal group-chat I sent the deployed website to friends and family and received feedback from various devices.
@@ -153,7 +157,7 @@ the resolutions I have tested the website on are as follows
 
   ## Deployment 
 
-- My site was deployed through GitHub pages
+- My site was deployed through GitHub pages, my methodology was:
   - I went to the project GitHub respository 
   - Clicked on the settings tab
   - went to pages section

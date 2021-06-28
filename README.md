@@ -116,9 +116,9 @@ The quiz features large contrasted previous and next buttons to help users know 
     - through a personal group-chat I sent the deployed website to friends and family and received feedback from various devices.
     - I had them play the quiz to ensure functionality. 
     - The participants also sent screenshots followed by their device make and model to allow me to increase my media query scope.
-![image of website from Samsung A50 phone](assets/images/samsung-a50.jpg)
+    ![image of website from Samsung A50 phone](assets/images/samsung-a50.jpg)
 
-![image of website from Samsung A50 phone](assets/images/galaxy-a50.jpg)
+    ![image of website from Samsung A50 phone](assets/images/galaxy-a50.jpg)
 
 - Summary
     - In relation to testing the feedback provided from the participants was extremely useful in the development of the media queries and the pages overall funtionality. 

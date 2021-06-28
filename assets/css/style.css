@@ -219,7 +219,7 @@ body {
     display: flex;
 }
 
-@media only screen and (max-device-width: 480px) {
+@media screen and (max-device-width: 480px) {
 
 /*Navigation links for mobile homepage*/
 .nav-links {

@@ -95,7 +95,8 @@ the resolutions I have tested the website on are as follows
 - Desktop screen
 - 1024px width
 - 720px width
-- 320px width 
+- Mobile 
+    - 320px-480px width 
 
 ### Validator Testing 
 - HTML

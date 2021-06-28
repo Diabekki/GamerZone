@@ -250,13 +250,6 @@ body {
     font-size: 16vw;
 }
 
-/* Footer to contain the copyright paragraph text on mobile*/
-.footer {
-    top: 85%;
-    font-size: 2vw;
-    position: absolute;
-}
-
 /*Styling for questions font on quiz page */
 .question {
     font-size: 5vw;
@@ -306,6 +299,13 @@ body {
     left: 32.5vw;
     font-size: 6vw;
 
+}
+
+/* Footer to contain the copyright paragraph text on mobile*/
+.footer {
+    top: 90%;
+    font-size: 2vw;
+    position: absolute;
 }
 
 }

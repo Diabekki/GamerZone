@@ -303,7 +303,7 @@ body {
 
 /* Footer to contain the copyright paragraph text on mobile*/
 .footer {
-    top: 90%;
+    top: 95%;
     font-size: 2vw;
     position: absolute;
 }

@@ -139,7 +139,7 @@ the resolutions I have tested the website on are as follows
   - From the drop down selected the master branch 
   - When the master branch was selected the page was automatically refreshed with a message letting me know my project has been deployed 
 
-  The live link to my webiste can be found here - https://diabekki.github.io/Buddha-the-enlightened-one/index.html
+  The live link to my webiste can be found here - https://diabekki.github.io/GamerZone/index.html
 
   ## Credits
 

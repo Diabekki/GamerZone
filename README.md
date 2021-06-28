@@ -16,14 +16,18 @@ The quiz features large contrasted previous and next buttons to help users know 
  **Navigation Bar**
   
   - Navigation bar on all pages, high contrast font for easy reading
-  - the nav link brings user back to home if they feel like restarting quiz part way 
-  - I kept the navigation bar simple to keep with the styling of older games, black with white contrast font seemed to be the best fit here
+  - the nav link brings user back to home if they feel like restarting quiz part way. 
+  - I kept the navigation bar simple to keep with the styling of older games, black with white contrast font seemed to be the best fit here.
 
   ![image of navbar](assets/images/Gamerzone-nav-bar.JPG)
 
+  **Main page text**
+  - The text "READY PLAYER ONE?" was a stylistic choice to mimic a arcade game start up screen.
+  - the text was put above the START button to further show the user what needs to be clicked/pressed. 
+
    **Start Button to begin quiz**
- - The design of the start button was to mimic the feeling of arcade start buttons
- - it was designed to look 3D to give the user clear intent that this needs to be pressed 
+ - The design of the start button was to mimic the feeling of arcade start buttons.
+ - it was designed to look 3D to give the user clear intent that this needs to be pressed.
 
   ![Image of arcade start button](assets/images/start-button.JPG)
 
@@ -36,35 +40,52 @@ The quiz features large contrasted previous and next buttons to help users know 
 
  **Footer, copyright text** 
   - The footer consists of high contrast colours, white against black for a sleek vibe yes still in sync with the websites theme.
-  - I kept the footer simple for the same reason the navigation bar was styled simplistically
-  - the simple design keeps the user focused on the image and start button (which commenses the quiz)
+  - I kept the footer simple for the same reason the navigation bar was styled simplistically.
+  - the simple design keeps the user focused on the image and start button (which commenses the quiz).
 
    ![Image of website footer with copyright text](assets/images/footer-copyright.JPG)
 
-**quiz**
-  -This page gives a detailed explanation of Siddhartha Gautama to became known as Buddha.
-  - It is concise but still explains his life from birth to enlightenment, an interesting read for the user.
+**Quiz**
+  - The quiz is compiled of trivia questions based on popular games.
+  - There is 10 questions in total to give variety to the user.
+  - The aim of the quiz is to be both fun and challenging to the user.
+  - there are previous and next buttons to move through the quiz and an end button which acts as both a submit and link to direct the user back to the hompage.
+  - A JavaScript alert appears at the end to indicate total player score.
 
-  ![Image of snippet taken from paragraph of Siddhartha](assets/images/Siddhartha.JPG)
+  ![image of quiz](assets/images/background-image-of-quiz.JPG)
 
-**Precepts** 
-  - This page is a more in depth look at the five precepts, what they mean, why are followed and the result of following these rules.
-  - The icons used were the "om" symbol and the dharmachakra, the symbols break up the paggages while also helping the entire page keep a flow and theme.
+**Quiz box** 
+  - The light opacity grey was chosen because I wanted to have the background pop in slightly from the background, I felt a stark grey contrast against the background image would ruin flow.
+  - The Question font colour is different from answers because I wanted to have a subtle yes noticeable between them, that is why questions are a larger font and slightly blue in colour.
  
 
- ![Image of snippet taken from Precepts page](assets/images/precepts.JPG)
+ ![Image of questions and answers box](assets/images/quiz-question-and-answers.JPG)
 
- **Thank you newsletter page** 
-   - The form at the end of each page, when the details are added the user is brought to a thank you page with information to check their email for upcoming news about the newsletter.
-   -The Buddah text in the upper left brings the user back to the home page for easy navigation.
 
-   ![Image of snippet taken thank you page](assets/images/thank-you.JPG)
+ **The end of quiz button prompt** 
+   - I decide to have an end button overlay the next button when the user reached the end of the quiz.
+    - The end button will bring the user back to the hompage
+   - This was done as to not cause an abrupt stop to the user experience and keep flow in tact.
+  
+   ![Image of previous and end button prompt](assets/images/previous-and-end-of-quiz-button.JPG)
+
+   **Score Counter**
+   - Score counter was added to give user information of how many correct answers they clicked.
+   - The bright green was chosen to make the score box pop against the background.
+
+   ![Image of score counter](assets/images/answer-correct-counter.JPG)
+
+   **Javascript alert pop up at end of quiz**
+   - A alert was added to indicate the final score to the player when they press the end button prompt.
+
+   ![image of quiz alert pop-up](assets/images/alert-numver-of-correct-answers.JPG)
+
 
   **Features left to add**
- - videos with more information about Buddhism
- - meet ups for people to meet up for meditation or walks
- - links to local and online seminars from monks for users to learn more
- - to go through more Media queries to make the website even more accessible to more users. 
+    - Create an original song to add to the quiz page for user to play as they go through the quiz.
+    - More questions about the wide variety of games.
+    - Either a carousel or a list of corresponding images that match question context and change when next button is clicked.
+    - To go through more Media queries to make the website even more accessible to a wider variety of users.
 
  ## Testing
 

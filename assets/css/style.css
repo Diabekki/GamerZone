@@ -219,7 +219,11 @@ body {
     display: flex;
 }
 
-@media screen and (max-device-width: 480px) {
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+
+    .container {
+        width: 100%;
+    }
 
 /*Navigation links for mobile homepage*/
 .nav-links {
@@ -248,8 +252,8 @@ body {
 
 /* Footer to contain the copyright paragraph text on mobile*/
 .footer {
-    top: 90%;
-    font-size: 2.5vw;
+    top: 85%;
+    font-size: 2vw;
     position: absolute;
 }
 

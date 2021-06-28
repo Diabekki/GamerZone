@@ -310,4 +310,88 @@ body {
 
 }
 
+@media only screen and (min-device-width: 481px) and (max-device-width: 768px) {
+/*Navigation links to bring player back to home after starting quiz*/
+.nav-links {
+    font-size: 6vw;
+    top: 4%;
+    margin-right: 20px;
+    padding-bottom: 0;
+}
 
+/*Styling for name of page in nav-bar*/
+.gamer-zone {
+    font-size: 6vw;
+    padding-bottom: 0;
+    margin-left: 20px;
+}
+
+/*Main container surrounding homepage*/
+.container {
+    width: 98%;
+}
+
+/*Styling for main text font "READ PLAYER ONE?" above Start button*/
+.main-text {
+    font-size: 6vw;
+    padding-top: 1%;
+}
+
+/* This is the button styling for the Start button on homepage to bring user to quiz */
+.btn {
+    position: absolute;
+    top: 77%;
+    font-size: 10vw;
+}
+
+/* Footer to contain the copyright paragraph text */
+.footer {
+    top: 92%;
+    font-size: 2vw;
+    position: absolute;
+}
+
+/*GAME PAGE MEDIA QUERY - TABLET*/
+
+/*Styling for questions font on quiz page */
+.question {
+    font-size: 4vw;
+    margin-top: 0vh;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+/*Styling for answers font on quiz page */
+.answers {
+    font-size: 3vw;
+    padding-bottom: 50px;
+}
+
+/*Styling for Next button on quiz page*/
+#next {
+    top: 70vh;
+    left: 60vw;
+    font-size: 6vw;
+}
+
+/*Styling for Previous button on quiz page*/
+#previous {
+    top: 70vh;
+    left: 20vw;
+    font-size: 6vw;
+}
+
+/*Styling for Submit button that appears over Next button at end of quiz*/
+#submit {
+    top: 70vh;
+    left: 60vw;
+    font-size: 6vw;
+}
+
+/*Styling for Results text box on quiz page*/
+#results {
+    top: 82vh;
+    left: 40vw;
+    font-size: 4vw;
+}
+}

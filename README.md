@@ -93,8 +93,19 @@ The quiz features large contrasted previous and next buttons to help users know 
     This was resolved by using an absolute position and shifting the funtionality buttons down and away from the question container.
 ![image of issue faced with next button](assets/images/next-button-covered-issue.png)
 
+    - Another issue faced was the start button to begin the quiz seemed to be moving towards the top of the screen depending on the aspect ratio of the device. 
+    This was resolved through CSS and media queries to ensure the start buttons proper placement in designated devices. 
+![image of issue facing start button](assets/images/start-button-issue.png)
 
 
+- JavaScript issues
+    - The largest issue faced was the intital attempt to run the quiz. The first set of code became saturated with both variables and funtions. 
+    Another issue that I faced in the first attempt was the temporal dead zone, as I did not fully understand it at the time so my funtions and variables faced issues communicating.
+    - In the second attempt of JavaScript I used a website mentioned below in credits, this resource helped me to keep my funtions and variables consistant and in a clear order for readability.
+    - Upon completing the base structure, the questions were listed and funtioned well, at this point I began to add the pages system that allowed me to display one question at a time, issues faced from this initially seemed to break the original code but after a while of revising the code I realised that my initiation function (start game) was incorrect. 
+    - The penultimate issue faced was the score counter as I had originally written the code to produce a result once the quiz was finished. The issue came as I had defined all the variables in a previous function and when trying to output the result I was receiving an error of "undefined", to fix this I simply moved any needed variable to the new results function. 
+    - The final issue faced was the coding of the alert box to tell the user their results.
+    This issue was due, again, to variables being defined within functions, this led to some variables being underdefined which I redefined outside of the function in order to get this work.
 
 
 - User testing

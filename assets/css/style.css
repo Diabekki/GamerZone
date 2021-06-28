@@ -247,7 +247,7 @@ body {
 /* This is the button styling for the Start button on homepage to bring user to quiz on mobile*/
 .btn {
     top: 65%;
-    font-size: 20vw;
+    font-size: 16vw;
 }
 
 /* Footer to contain the copyright paragraph text on mobile*/
@@ -257,123 +257,57 @@ body {
     position: absolute;
 }
 
-/*Styling for overall quiz container*/
-#quiz {
-    text-align: center;
-    width: 100%;
-    margin: auto;
-}
-
 /*Styling for questions font on quiz page */
 .question {
-    color: #b7e9f7;
-    font-family: 'Oxanium', cursive;
-    font-size: 3vw;
-    text-align: center;
-    margin-right: auto;
-    margin-left: auto;
-    margin-top: 30vh;
-    background-color: rgba(75, 75, 75, 0.85);
-    width: 80%;
-    padding-top: 30px;
-    padding-bottom: 50px;
-    border-radius: 10px 10px 0 0;
+    font-size: 5vw;
+    margin-top: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 /*Styling for answers font on quiz page */
 .answers {
-    color: white;
-    font-family: 'Oxanium', cursive;
-    margin-bottom: 30px;
-    font-size: 2vw;
-    text-align: center;
-    margin-right: auto;
-    margin-left: auto;
-    background-color: rgba(75, 75, 75, 0.85);
-    width: 80%;
-    padding-bottom: 20px;
-    border-radius: 0 0 10px 10px;
+    margin-bottom: 0;
+    font-size: 3vw;
+    padding-bottom: 10px;
 }
 
 /*Styling for Next button on quiz page*/
 #next {
     position: absolute;
-    top: 100vh;
-    left: 55vw;
-    background: #ffff00;
-    font-family: 'Oxanium', cursive;
-    font-size: 3vw;
-    border-radius: 15%;
-    color: #000000;
-    padding: 5px;
-    box-shadow: #d1d100 5px 5px 0px 2px;
-    text-decoration: none;
+    top: 60vh;
+    left: 60vw;
+    font-size: 8vw;
+    box-shadow: #d1d100 4px 4px 0px 2px;
 }
 
 /*Styling for Previous button on quiz page*/
 #previous {
     position: absolute;
-    top: 100vh;
-    left: 30vw;
-    background: #ffff00;
-    font-family: 'Oxanium', cursive;
-    font-size: 3vw;
-    border-radius: 15%;
-    color: #000000;
-    padding: 5px;
-    box-shadow: #d1d100 5px 5px 0px 2px;
-    text-decoration: none;
+    top: 60vh;
+    left: 10vw;
+    font-size: 8vw;
+    box-shadow: #d1d100 4px 4px 0px 2px;
+
 }
 
 /*Styling for Submit button that appears over Next button at end of quiz*/
 #submit {
     position: absolute;
-    top: 100vh;
-    left: 55vw;
-    background: #ffff00;
-    font-family: 'Oxanium', cursive;
-    font-size: 3vw;
-    border-radius: 15%;
-    color: #000000;
-    padding: 5px;
-    box-shadow: #d1d100 5px 5px 0px 2px;
-    text-decoration: none;
+    top: 60vh;
+    left: 65vw;
+    font-size: 8vw;
+    box-shadow: #d1d100 4px 4px 0px 2px;
 }
 
 /*Styling for Results text box on quiz page*/
 #results {
-    position: absolute;
-    top: 120vh;
-    left: 40vw;
-    background: rgb(131, 255, 131);
-    font-family: 'Oxanium', cursive;
-    font-size: 3vw;
-    border-radius: 15%;
+    top: 75vh;
+    left: 32.5vw;
+    font-size: 6vw;
 
 }
 
-/* Styling for JavaScript page overlay function*/
-.page {
-    position: absolute;
-    left: 0px;
-    top: 30vh;
-    width: 100%;
-    z-index: 1;
-    opacity: 0;
-}
-
-.active-page {
-    opacity: 1;
-    z-index: 2;
-}
-
-/*Image for quiz page*/
-.game-image{
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    display: flex;
-}
 }
 
 

@@ -89,19 +89,7 @@ The quiz features large contrasted previous and next buttons to help users know 
 
  ## Testing
 
-- I have conducted many tests to ensure the website works well, I have had to change the nav bar muliple times to make it sit properly which posed quite a challenge at first.
-
-- I have checked the nav links work and bring the user to the right designated page.
-
-- I have checked that all social media links are working fully and bring the user to the exact area specified.
-
-- I have checked that the fixed background image on the home page does not stretch when scrolling.
-
-- I have checked that the sign up form works and brings the user to the newsletter thank you page.
-
-- I have checked the submit button css style works when clicking submit.
-
-Getting the CSS to work perfectly proved to be a good learning curve as I had chosen not to use bootstrap to try challenge myself building everything from scratch.
+- 
 
 the resolutions I have tested the website on are as follows 
 - Desktop screen
@@ -133,26 +121,29 @@ the resolutions I have tested the website on are as follows
 
   ## Deployment 
 
-- My site was deployed through GIitHub pages
-  - I navigated through the GitHub respository 
+- My site was deployed through GitHub pages
+  - I went to the project GitHub respository 
   - Clicked on the settings tab
-  - From the drop down selected the master branch 
-  - When the master branch was selected the page was automatically refreshed with a message letting me know my project has been deployed 
+  - went to pages section
+  - From the drop down menu I selected the master branch 
+  - I then clicked Save
+  - I was then given a message on screen to inform me my project has been deployed.
 
   The live link to my webiste can be found here - https://diabekki.github.io/GamerZone/index.html
 
   ## Credits
 
-- The text for the home page was loosely taken from wikipedia https://en.wikipedia.org/wiki/Buddhism
-- Instructions for CSS I found difficult was taken from w3schools https://www.w3schools.com/css/default.asp
-- Details about the five precepts were taken from buddho https://buddho.org/buddhism-and-morality-the-five-precept/
-- Information about Siddhartha was taken from https://artsandculture.google.com/exhibit/indian-buddhist-art-indian-museum-kolkata/sQKy9A-7JPwzJQ?hl=en
-- Icons in the Precepts page were taken from Font Awesome https://fontawesome.com/
+- https://www.sitepoint.com/ 
+    - What was used from this site was a guide on the structural layout of JavaScript, e.g fuctions, variables, etc.
+- https://favicon.io/
+    - This site was used to get the favicon.ico image for the website
 - Fonts used throughout website was taken from Google Fonts https://fonts.google.com/
 
 
 ## Media 
-- Image media was taken from Pexels 
+- Image media was taken from
+   - Pexels https://www.pexels.com/
+   - Unsplash https://unsplash.com/
 
 ## Acknowledgements
 

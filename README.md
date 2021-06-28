@@ -183,8 +183,9 @@ the resolutions I have tested the website on are as follows
 
 ## Acknowledgements
 
-I want to thank my Fiance who kept pushing me to keep bettering myself and not letting me give up, fellow students for letting me vent frustrations when I felt overwhelmed with the work,
-Kasia who keeps up our morale and always checks to see if we are doing okay and finally my mentor for guiding me and showing me that even through the worry I can still showcase something I'm proud of. 
+I want to thank my Fiance who kept pushing me to keep bettering myself and not letting me give up and for giving me advice on how get the readme to sound more structured and professional.
+Fellow students for letting me vent frustrations when I felt overwhelmed with the work.
+Kasia who keeps up our morale and always checks to see if we are doing okay and finally my mentor for guiding me pushing me to do more challeging work.
 
 
 

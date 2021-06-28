@@ -184,7 +184,7 @@ let cPage = 0;
 sPage(cPage);
 
 function home() {
-    window.location.assign("index.html");
+    window.location.href='index.html';
     alert("Congratulations, you got " + results.textContent + "!");
 }
 

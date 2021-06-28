@@ -113,14 +113,29 @@ the resolutions I have tested the website on are as follows
 - HTML
   - No error found when ran through W3C validator https://validator.w3.org/
 
+![image of error free message for W3C validator on index page](assets/images/index.html-validation.JPG)
+
+-Game.HTML
+    - No error found when ran through W3C validator https://validator.w3.org/
+
+![image of error free message for W3C validator on game page](assets/images/game.html-validation.JPG)
+
 - CSS 
   - No errors found when tested on Jigsaw https://jigsaw.w3.org/css-validator/
+
+  ![image of error free message for website CSS](assets/images/style.css-validation.JPG)
+
+- JavaScript 
+    - No errors found when tested on JSHint https://jshint.com/
+
+![image of error free messgae for JavaScript](assets/images/javascript-validation.JPG)
+
 
   ## Deployment 
 
 - My site was deployed through GIitHub pages
   - I navigated through the GitHub respository 
-  - Clicked on the seetings tab
+  - Clicked on the settings tab
   - From the drop down selected the master branch 
   - When the master branch was selected the page was automatically refreshed with a message letting me know my project has been deployed 
 

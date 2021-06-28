@@ -88,13 +88,33 @@ The quiz features large contrasted previous and next buttons to help users know 
     - To go through more Media queries to make the website even more accessible to a wider variety of users.
 
  ## Testing
+- Issues faced
+    - As seen in the image below, the functionality buttons (next and previous) were getting trapped or stuck behind the question pages.
+    This was resolved by using an absolute position and shifting the funtionality buttons down and away from the question container.
+![image of issue faced with next button](assets/images/next-button-covered-issue.png)
 
-- 
+
+
+
+
+- User testing
+    - through a personal group-chat I sent the deployed website to friends and family and received feedback from various devices.
+    - I had them play the quiz to ensure functionality. 
+    - The participants also sent screenshots followed by their device make and model to allow me to increase my media query scope.
+![image of website from Samsung A50 phone](assets/images/samsung-a50.jpg)
+
+![image of website from Samsung A50 phone](assets/images/galaxy-a50.jpg)
+
+- Summary
+    - In relation to testing the feedback provided from the participants was extremely useful in the development of the media queries and the pages overall funtionality. 
 
 the resolutions I have tested the website on are as follows 
 - Desktop screen
-- 1024px width
-- 720px width
+    - 1024px & up width
+- Laptop
+    - 769px-1024px width
+- Tablet
+    - 481px-768px width
 - Mobile 
     - 320px-480px width 
 

@@ -17,36 +17,31 @@ The quiz features large contrasted previous and next buttons to help users know 
   
   - Navigation bar on all pages, high contrast font for easy reading
   - the nav link brings user back to home if they feel like restarting quiz part way 
+  - I kept the navigation bar simple to keep with the styling of older games, black with white contrast font seemed to be the best fit here
 
-  ![Image of Navigation bar](assets/images/navbar.JPG)
+  ![image of navbar](assets/images/Gamerzone-nav-bar.JPG)
 
- **Main header image**
-  - The image of of a serene photograph of a Buddhist statue, the image is very soothing to look at and sets the vibe of the webpage.
+   **Start Button to begin quiz**
+ - The design of the start button was to mimic the feeling of arcade start buttons
+ - it was designed to look 3D to give the user clear intent that this needs to be pressed 
 
- ![Image of Buddah statue](assets/images/buddha-nav-image.jpg)
+  ![Image of arcade start button](assets/images/start-button.JPG)
 
- **Buddhism summery title and image**
-  - This is image and title from the home page give off a sense of symetry in both colour and theme whe compared to the main nav image.
-  - This is an easy way for someone to understand the theme and story origin even with basic or no prior knowledge of Buddha and Buddhism.
+ **Main page image**
+  - The image chosen fit very well with the page intent.
+  - The colourful image conveys what the user should be expecting from the page, the user will be expecting a game as image keeps overall page flow. 
 
-![Image of buddha statues sitting in a row](assets/images/Home-Title.JPG) 
-
- **Newsletter sign up prompt**
-  - This is a welcoming message to ask the viewer to sign up for an email newsletter.
-  - The wording is written to be inviting and give the user a sense of communnity if they choose to sign up.
-  - The second image is of the sign up form itself, its user friendly east to navigate. 
+ ![Image of kid playing arcade games](assets/images/homepage-main-image.JPG)
 
 
-   ![Image of sign up message](assets/images/inviting-email-signup.JPG)
-   ![Image of sign up form](assets/images/Sign-up-form.JPG)
+ **Footer, copyright text** 
+  - The footer consists of high contrast colours, white against black for a sleek vibe yes still in sync with the websites theme.
+  - I kept the footer simple for the same reason the navigation bar was styled simplistically
+  - the simple design keeps the user focused on the image and start button (which commenses the quiz)
 
- **Footer, Social  Media links and information link** 
-  -The footer consists of high contrast colours, white against black for a sleek vibe yes still in sync with the websites theme.
-  -The Social media links are white for easy seeing access and each link goes to a page specifically about Buddhism.
+   ![Image of website footer with copyright text](assets/images/footer-copyright.JPG)
 
-   ![Image of website footer with social media links](assets/images/footer.JPG)
-
-**History**
+**quiz**
   -This page gives a detailed explanation of Siddhartha Gautama to became known as Buddha.
   - It is concise but still explains his life from birth to enlightenment, an interesting read for the user.
 
